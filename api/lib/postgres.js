@@ -14,7 +14,7 @@ class Postgres {
     this.Sequelize = Sequelize;
   }
 
-  async init(force = false) {
+  async init(force = true) {
     logger.info(`Connecting to postgres`);
     const response = await this.instance.sync({force});
     logger.info(`Connected to postgres`);

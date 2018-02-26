@@ -14,9 +14,18 @@
     "express": "^4.16.2",
     "express-router-wrapper": "^2.0.0",
     "helmet": "^3.11.0",
+    "joi": "^13.1.2",
     "method-override": "^2.3.10",
     "pg": "^7.4.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
     "sequelize": "^4.34.0",
     "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "request-debug": "^0.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

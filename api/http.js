@@ -38,6 +38,8 @@ class Server {
 
   setRoutes() {
     this.app.get('/', (req, res) => res.json({status: 200}));
+
+    this.app.use('/v1/wishlist', require('./components/wishlist/router'));
   }
 
   setErrorHandlers() {
@@ -56,7 +58,7 @@ class Server {
         const {
           statusCode,
           payload
-        } = err.isBoom ? err.output : Boom.wrap(err).output;
+        } = err.isBoom ? err.output : Boom.boomify(err).output;
 
         return res
           .status(statusCode)
