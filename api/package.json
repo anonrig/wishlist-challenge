@@ -1,0 +1,22 @@
+{
+  "name": "wishlist-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anonrig/wishlist-challenge.git",
+  "author": "Yagiz Nizipli <yagiznizipli@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "boom": "^7.1.1",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "express-router-wrapper": "^2.0.0",
+    "helmet": "^3.11.0",
+    "method-override": "^2.3.10",
+    "pg": "^7.4.1",
+    "sequelize": "^4.34.0",
+    "winston": "^2.4.0"
+  }
+}
