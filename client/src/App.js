@@ -37,11 +37,11 @@ class App extends Component {
   }
 
   search(keyword) {
-    if (!keyword || !keyword.length) {
-      return;
-    }
-
     this.setState({searchKeyword: keyword}, () => {
+      if (!keyword || !keyword.length) {
+        return;
+      }
+
       API
         .search(keyword)
         .then((searchResult) => {
